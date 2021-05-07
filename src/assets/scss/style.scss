@@ -1,5 +1,5 @@
-@use 'base/placeholders' as *;
 @use 'blocks/titles';
+@use 'blocks/text';
 
 *,
 *:before,
@@ -22,8 +22,4 @@
 body {
   font-family: 'Nunito', sans-serif;
   color: var(--black);
-}
-
-p {
-  @extend %text;
 }
