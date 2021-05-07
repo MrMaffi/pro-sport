@@ -1,0 +1,6 @@
+@use '../base/placeholders';
+
+.title_fz65 {
+  font-size: 65px;
+  @extend %title;
+}

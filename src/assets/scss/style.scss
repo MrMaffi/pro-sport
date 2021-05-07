@@ -1,4 +1,5 @@
-@use './base/placeholders' as *;
+@use 'base/placeholders' as *;
+@use 'blocks/titles';
 
 *,
 *:before,
@@ -21,16 +22,6 @@
 body {
   font-family: 'Nunito', sans-serif;
   color: var(--black);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Zen Dots', cursive;
-  color: var(--title-color);
 }
 
 p {
