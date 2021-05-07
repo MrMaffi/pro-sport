@@ -1,0 +1,6 @@
+// * bp stands for break point
+@mixin breakpoint($bp) {
+  @media (min-width: $bp) {
+    @content;
+  }
+}
