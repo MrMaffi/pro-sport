@@ -1,3 +1,5 @@
+@use './base/placeholders' as *;
+
 *,
 *:before,
 *:after {
@@ -6,8 +8,19 @@
   margin: 0;
 }
 
+:root {
+  --black: black;
+  --gray: #3d3d3d;
+  // * lg stands for light gray
+  --lg-gradient: linear-gradient(180deg, #f8f8f8 35.25%, #ffffff 100%);
+  --primary: #ffa132;
+  --light-orange: #fffcf9;
+  --light-blue: #f5f9ff;
+}
+
 body {
   font-family: 'Nunito', sans-serif;
+  color: var(--black);
 }
 
 h1,
@@ -17,4 +30,9 @@ h4,
 h5,
 h6 {
   font-family: 'Zen Dots', cursive;
+  color: var(--title-color);
+}
+
+p {
+  @extend %text;
 }
